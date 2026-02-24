@@ -1,0 +1,114 @@
+/* Reset CSS inspirado no "modern CSS reset" do Andy Bell
+   Fonte de referência: https://andy-bell.design/modern-css-reset/
+   Uso: importe este arquivo antes dos estilos globais/base.
+*/
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove margins e paddings padrão */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout mínimo */
+n html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Imagens e mídia */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Tipografia: herdar fontes em inputs */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Lists */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Buttons */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* Quebra de palavras */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Cria um novo contexto de empilhamento para o root (opcional) */
+#root,
+#app {
+    isolation: isolate;
+}
+
+/* Respeitar preferência por reduzir movimentos */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
